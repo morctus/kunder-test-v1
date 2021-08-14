@@ -1,0 +1,81 @@
+ion-content{
+  height: 100%;
+  width: 100%;
+
+  .banner{
+    width: 100%;
+    height:100%;
+    min-height: 100px;
+    background-size: cover;
+
+    .banner-cellphone{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+
+      div{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex: 1;
+        font-size: 16px;
+        color: white;
+      }
+
+      img{
+        flex: 1;
+        height: 50vh;
+        width: auto;
+        margin: 10%;
+        max-height: 90%;
+        padding: 0;
+        align-items: center;
+        object-fit: contain;
+      }
+
+      span{
+        color: #2f2f2f;
+      }
+    }
+
+    .banner-plan{
+      height: 100%;
+      width: 100%;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button{
+        flex: 0.75;
+        min-height: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5px;
+        min-width: 40px;
+        padding: 0;
+        background: white;
+        border: solid 2px grey;
+        cursor: pointer;
+        height: calc(6vh);
+        width: 40px;
+
+        span{
+          color: grey;
+          font-size: 12px;
+        }
+      }
+
+      span{
+        margin-left: 5%;
+        margin-right: 5%;
+        flex: 1.25;
+        font-size: 16px;
+        color: white;
+      }
+    }
+  }
+}
+

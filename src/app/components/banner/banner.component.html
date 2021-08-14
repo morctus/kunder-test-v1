@@ -1,0 +1,30 @@
+<ion-content class='banner-container'>
+	<div
+      *ngIf="bannerData?.product?.type=='plan'"
+      [ngStyle]="{'background-image': 'url(' + bannerData?.product?.backgroundImg + ')'}"
+      class="banner"
+  >
+		<div class="banner-plan">
+			<span>{{bannerData?.product?.productDescription}}</span>
+			<button (click)='link();'>
+	      		<span>{{bannerData?.product?.buttonText}}</span>
+	    </button>
+		</div>
+	</div>
+
+	<div *ngIf="bannerData?.product?.type=='cellphone'" class="banner">
+		<div class="banner-cellphone">
+	    	<img
+          class="banner-image"
+          [src]="bannerData?.product?.productImg" />
+			<div>
+			    <span>
+            {{bannerData?.product?.productName}}
+          </span>
+			    <span>
+            {{bannerData?.product?.productDescription}}
+          </span>
+			</div>
+    	</div>
+	</div>
+</ion-content>
